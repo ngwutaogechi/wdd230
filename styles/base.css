@@ -1,0 +1,85 @@
+/* Base CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: #004aad;
+    justify-content: center; 
+    color: white;
+    padding: 10px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: brown
+    
+}
+
+main h1 {
+    border-bottom: 2px solid #ccc; /* Adds a thin line under the heading */
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+
+.cards {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+h2 {
+    background: #004aad;
+    padding: 5px;
+    color: white;
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #003580;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
