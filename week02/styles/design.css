@@ -1,0 +1,126 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/*  Responsive Hamburger Menu */
+#menu-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hide on desktop */
+}
+
+#nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+/*  Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #nav-menu.show {
+        display: flex;
+    }
+}
+
+/* Dark Mode Toggle */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #9fa8da; /* Light blue for contrast */
+}
+
+#dark-mode-btn {
+    cursor: pointer;
+}
+
+/* Page Layout */
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+}
+
+/* Banner */
+.banner {
+    padding: 1rem;
+    background-color: #702963; /* Dark purple */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Callout Box */
+.callout {
+    color: white;
+    background-color: #4B0082; /* Indigo */
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+/* Responsive Two-Column Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Make <h2> Span Both Columns */
+h2 {
+    color: navy;
+    text-align: left;
+    grid-column: span 2;
+}
+
+/* Justify Text in Articles */
+article p {
+    text-align: justify;
+}
+
+h3 {
+    padding-bottom: 0.5rem; /* Adds a small gap under h3 */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Stack sections on small screens */
+    }
+    .callout {
+        padding: 2rem; /* Reduce padding for mobile */
+    }
+}
+
+/*  Footer */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+}
