@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
