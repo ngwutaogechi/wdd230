@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development | Ngwuta Ogechi Enrica | course assignment portal">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Ngwuta Ogechi Enrica | Course Portal">
     <meta name="author" content="Ngwuta Ogechi Enrica">
     <title>Ngwuta Ogechi Enrica - WDD 230 - Web Frontend Development</title>
+    
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <img src="images/Ogechi Enrica.jpg" alt="Profile Photo" class="profile">
+        <img src="images/Ogechi-Enrica.webp" alt="Profile Photo" class="profile">
         <h1>Ngwuta Ogechi Enrica</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="#" class="active">Home</a></li>
@@ -22,33 +24,40 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="cards">
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="#">Week 1 Activity</a></li>
-                    <li><a href="#">Week 2 Activity</a></li>
-                    <li><a href="#">Week 3 Activity</a></li>
-                    <li><a href="#">Week 4 Activity</a></li>
-                    <li><a href="#">Week 5 Activity</a></li>
-                    <li><a href="#">Week 6 Activity</a></li>
-                    <li><a href="chamber-site-plan.html">Chamber Site Plan</a></li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>Information</h2>
-                <p><strong>Toloria, Madagascar</p>
-                <p><strong>76℉-Sunshine</p>    
-                <p><strong>page Visits:</strong>15</p>
-            </section>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <img src="images/temple-small.webp" media="(min-width: 960px)"alt="Accra Ghana Temple" loading="lazy">
+            </picture>
+            <div class="overlay">Accra Ghana Temple</div>
+        </section>
+
+        <!-- Information Card with Visit Counter -->
+        <section class="info-card">
+            <h2>Welcome to My Course Portal</h2>
+            <p><strong>Page Visits:</strong> <span id="visit-counter">0</span></p>
+        </section>
+
+        <!-- Google Map Embed -->
+        <section class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127070.000000!2d7.000000!3d5.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0000000000000000!2sYour+Hometown!5e0!3m2!1sen!2sng!4v1640000000000" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
         </section>
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span> Ngwuta Ogechi Enrica | Nigeria</p>
         <p id="lastModified"></p>
     </footer>
+
     <script src="scripts/getDates.js"></script>
 </body>
 </html>
