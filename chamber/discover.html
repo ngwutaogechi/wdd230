@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover more about our community through local events, attractions, and insights.">
+    <meta property="og:title" content="Discover - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ngwutaogechi.github.io/wdd230/preview.png">
+    <meta property="og:url" content="https://ngwutaogechi.github.io/wdd230/chamber/discover.html">
+    <title>Discover - Chamber of Commerce</title>
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/visit-tracker.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <button id="menu-btn">&#9776;</button>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="grid-layout">
+        <aside class="sidebar">
+            <h2>Community Insights</h2>
+            <p id="visitMessage">Loading...</p>
+            <ul>
+                <li>Population: 50,000+</li>
+                <li>Local Events: Weekly Farmer's Market</li>
+                <li>Top Attraction: City Museum</li>
+            </ul>
+        </aside>
+                
+        <section class="gallery">
+            <h2>Local Attractions</h2>
+            <figure>
+                <img src="images/photo01.webp" loading="lazy" alt="City Park">
+                <figcaption>City Park</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo02.webp" loading="lazy" alt="Local Market">
+                <figcaption>Local Market</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo03.webp" loading="lazy" alt="Historic Site">
+                <figcaption>Historic Site</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo04.webp" loading="lazy" alt="River Walk">
+                <figcaption>River Walk</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo05.webp" loading="lazy" alt="Community Center">
+                <figcaption>Community Center</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo06.webp" loading="lazy" alt="Downtown Plaza">
+                <figcaption>Downtown Plaza</figcaption>
+            </figure>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at vincentogechi03@gmail.com</p>
+        <p>&copy; 2025 Chamber of Commerce</p>
+        <p>Developed by Ngwuta Ogechi | WDD 230</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

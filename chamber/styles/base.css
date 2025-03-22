@@ -3,67 +3,80 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #f9f9f9;                                            
     color: #333;
 }
 
-/* Reusable Card Styles */
-.events, .weather, .spotlights {
-    background: white;
+/* Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding: 1rem;
-    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: #e0f7fa;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Call-to-Action Section */
-.cta {
-    padding: 1rem;
+.sidebar h2 {
     text-align: center;
-    background: #e0f7fa;
-    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-/* Weather Section */
-.weather-card {
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 1rem;
-    background: #f0f8ff;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+#visitMessage {
+    font-weight: bold;
+    color: #00796b;
 }
 
-/* Spotlights Section */
-.spotlights {
+/* Navigation */
+nav {
+    background: #00796b;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
-.spotlight {
-    width: 30%;
+    flex-direction: column;
     text-align: center;
-    padding: 1rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.spotlight:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+nav ul li {
+    padding: 10px;
 }
 
-/* Spotlight Images */
-.spotlight img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+header h1 {
+    text-align: center;
+}
+
 
 /* Footer */
 footer {
