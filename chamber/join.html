@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover more about our community through local events, attractions, and insights.">
+    <meta property="og:title" content="Discover - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ngwutaogechi.github.io/wdd230/preview.png">
+    <meta property="og:url" content="https://ngwutaogechi.github.io/wdd230/chamber/discover.html">
+    <title>Join Chamber of Commerce</title>
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="thankyou.html">thankyou</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Join the Chamber</h2>
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name: <input type="text" id="firstName" name="firstName" required></label>
+            <label for="lastName">Last Name: <input type="text" id="lastName" name="lastName" required></label>
+            <label for="title">Title/Position: <input type="text" id="title" name="title" pattern="[A-Za-z\-\s]{7,}"></label>
+            <label for="email">Email: <input type="email" id="email" name="email" placeholder="example@domain.com" required></label>
+            <label for="phone">Mobile Phone: <input type="tel" id="phone" name="phone" required></label>
+            <label for="business">Business/Organization Name: <input type="text" id="business" name="business" required></label>
+            
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="NP" required> NP Membership (Free)</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+            </fieldset>
+            
+            <label for="description">Business Description: <textarea id="description" name="description"></textarea></label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Chamber of Commerce</p>
+        <p>WDD 230 | Ngwuta Ogechi</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    <script>
+        document.getElementById("timestamp").value = new Date().toISOString();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
