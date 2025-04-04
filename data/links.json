@@ -1,0 +1,41 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "links": [
+                { "url": "week1/activity1.html", "title": "Grail" },
+                { "url": "week1/activity2.html", "title": "Media Query" }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                { "url": "week2/activity1.html", "title": "Design" },
+                { "url": "week2/activity2.html", "title": "Menu" },
+                { "url": "week2/activity3.html", "title": "BOM-25" }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                { "url": "week3/activity1.html", "title": "WebP" },
+                { "url": "week3/activity2.html", "title": "Lazy" },
+                { "url": "week3/activity3.html", "title": "srcset" },
+                { "url": "week3/activity4.html", "title": "LocalStorage" }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                { "url": "week4/activity1.html", "title": "#" }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                { "url": "week5/activity1.html", "title": "JavaScript" },
+                { "url": "week5/activity2.html", "title": "Weather Information" }
+            ]
+        }
+    ]
+}

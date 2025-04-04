@@ -29,7 +29,7 @@
         <!-- Hero Image Section -->
         <section class="hero">
             <picture>
-                <img src="images/temple-small.webp" media="(min-width: 960px)"alt="Accra Ghana Temple" loading="lazy">
+                <img src="images/temple-small.webp" media="(min-width: 960px)" alt="Accra Ghana Temple" loading="lazy">
             </picture>
             <div class="overlay">Accra Ghana Temple</div>
         </section>
@@ -38,21 +38,17 @@
         <section class="info-card">
             <h2>Welcome to My Course Portal</h2>
             <p><strong>Page Visits:</strong> <span id="visit-counter">0</span></p>
-            <p><strong>Location:</strong> Toloria, Madagascar</p>
-            <p><strong>Weather:</strong> 76℉ - Sunshine</p>    
+            <p><strong>Location:</strong> Antananarivo, Madagascar</p> 
+            <p><strong>Weather:</strong> <span id="weather-temp">Loading...</span> <span id="weather-desc">Loading...</span></p>
+            <img id="weather-icon" src="" alt="" style="display: block; width: 50px; height: 50px;">
         </section>
 
         <section class="info-card">
             <h2>Learning Activities</h2>
             <ul>
-                <li><a href="#">Week 1 Activity</a></li>
-                <li><a href="#">Week 2 Activity</a></li>
-                <li><a href="#">Week 3 Activity</a></li>
-                <li><a href="#">Week 4 Activity</a></li>
-                <li><a href="#">Week 5 Activity</a></li>
-                <li><a href="#">Week 6 Activity</a></li>
-                <li><a href="chamber-site-plan.html">Chamber Site Plan</a></li>
+                <!-- This list will be populated dynamically by JavaScript -->
             </ul>
+        
         </section>
 
         <!-- Google Map Embed -->
@@ -74,7 +70,7 @@
                 Last Updated: <span id="last-modified">Date and time</span>
         </div>
     </footer>
-
+    <script src="scripts/links.js"></script>
     <script src="scripts/getDates.js"></script>
 </body>
 </html>

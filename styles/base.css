@@ -91,12 +91,6 @@ main h1 {
     text-align: center;
 }
 
-/* Cards Section */
-.cards {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
-}
 
 h2 {
     background: #004aad;
@@ -104,16 +98,8 @@ h2 {
     color: white;
 }
 
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 /* Visit Counter */
 .info-card {
-    text-align: center;
     background: white;
     padding: 20px;
     margin-top: 20px;
