@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "TechSphere Ltd.",
+        "address": "123 Innovation Way, Silicon City",
+        "phone": "555-123-4567",
+        "website": "https://www.techsphere.com",
+        "image": "techsphere.png",
+        "membership": "Gold",
+        "info": "Leading tech innovations and smart solutions."
+      },
+      {
+        "name": "GreenLeaf Organics",
+        "address": "89 Eco Park, Green Town",
+        "phone": "555-987-6543",
+        "website": "https://www.greenleaf.com",
+        "image": "greenleaf.png",
+        "membership": "Silver",
+        "info": "Eco-friendly and organic products for everyone."
+      },
+      {
+        "name": "BizNest Co-Working",
+        "address": "456 Startup Ave, Hustle Hub",
+        "phone": "555-555-1234",
+        "website": "https://www.biznest.com",
+        "image": "biznest.png",
+        "membership": "Bronze",
+        "info": "Your community for productive workspace."
+      },
+      {
+        "name": "Mountain Gear",
+        "address": "678 Hiker Trail, Rocky Town",
+        "phone": "555-321-7890",
+        "website": "https://www.mountaingear.com",
+        "image": "mountaingear.JPEG",
+        "membership": "Gold",
+        "info": "Top-tier outdoor adventure equipment."
+      },
+      {
+        "name": "Oceanic Travels",
+        "address": "101 Cruise Lane, SeaSide",
+        "phone": "555-888-9999",
+        "website": "https://www.oceanictravels.com",
+        "image": "oceanictravels.JPEG",
+        "membership": "Silver",
+        "info": "Exploring the world one wave at a time."
+      },
+      {
+        "name": "Book Haven",
+        "address": "321 Reader Rd, Bookville",
+        "phone": "555-456-7891",
+        "website": "https://www.bookhaven.com",
+        "image": "bookhaven.JPEG",
+        "membership": "Gold",
+        "info": "Where stories live and imaginations grow."
+      },
+      {
+        "name": "FitPulse Gym",
+        "address": "222 Workout Blvd, Fitness City",
+        "phone": "555-777-3333",
+        "website": "https://www.fitpulse.com",
+        "image": "fitpulse.JPEG",
+        "membership": "Bronze",
+        "info": "Pulse-pounding workouts to fit your lifestyle."
+      }
+    ]
+  }
+  
