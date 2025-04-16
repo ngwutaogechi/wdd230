@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Chamber of Commerce site for promoting local businesses and events." />
+  <meta name="author" content="Chamber Team" />
+  <meta property="og:title" content="Chamber of Commerce" />
+  <meta property="og:description" content="Meet and Greet local businesses in your area." />
+  <meta property="og:image" content="images/chamber-preview.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <div id="banner" class="banner" style="display:none;">
+    <p>You're invited to the Chamber of Commerce Meet and Greet — Wednesday at 7:00 p.m.!</p>
+    <button id="closeBanner" aria-label="Close banner">❌</button>
+  </div>
+
+  <main>
+    <section id="weather" aria-label="Weather Section">
+      <h2>Local Weather</h2>
+      <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+      <p><strong>Condition:</strong> <span id="weather-desc"></span></p>
+      <div id="forecast"></div>
+    </section>
+
+    <section id="spotlights" aria-label="Spotlight Section">
+      <h2>Member Spotlights</h2>
+    </section>
+  </main>
+
+  <footer> 
+    &copy; <span id="year"></span> Your Chamber of Commerce
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlight.js"></script>
+  <script src="scripts/banner.js"></script>
+</body>
+</html>
